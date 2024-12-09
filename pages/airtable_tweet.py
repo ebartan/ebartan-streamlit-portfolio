@@ -15,7 +15,7 @@ for i in range(0, len(all_data), 3):
         if i < len(all_data):
             st.text_area("Tweet", 
                         all_data[i]["fields"].get("Tweet_Text", ""), 
-                        height=150,
+                        height=320,
                         key=f"tweet_{i}")
             
             # Image verilerini kontrol et ve varsa göster
@@ -31,7 +31,7 @@ for i in range(0, len(all_data), 3):
         if i + 1 < len(all_data):
             st.text_area("Tweet", 
                         all_data[i + 1]["fields"].get("Tweet_Text", ""), 
-                        height=150,
+                        height=320,
                         key=f"tweet_{i+1}")
             
             # Image verilerini kontrol et ve varsa göster
@@ -47,7 +47,7 @@ for i in range(0, len(all_data), 3):
         if i + 2 < len(all_data):
             st.text_area("Tweet", 
                         all_data[i + 2]["fields"].get("Tweet_Text", ""), 
-                        height=150,
+                        height=320,
                         key=f"tweet_{i+2}")
             
             # Image verilerini kontrol et ve varsa göster
