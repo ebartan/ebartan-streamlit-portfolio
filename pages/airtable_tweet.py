@@ -1,9 +1,9 @@
 from pyairtable import Api
 import streamlit as st
 import os
-print(st.secrets['AIRTABLE_API_KEY'])
+
 api = Api(st.secrets['AIRTABLE_API_KEY'])
-table = api.table('appvyfSdDhwHiySVb', 'tblgKmjwBBxkRfUcy')
+table = api.table(st.secrets['AIRTABLE_BASE_ID'], st.secrets['AIRTABLE_TABLE_ID'])
 all_data = table.all(sort=["-Created"])
 print(all_data[0])
 
