@@ -5,8 +5,8 @@ charset-normalizer==3.4.0
 idna==3.10
 inflection==0.5.1
 pyairtable==3.0.1
-pydantic==2.10.3
-pydantic_core==2.27.1
+pydantic==2.9.2
+pydantic_core==2.23.4
 requests==2.32.3
 typing_extensions==4.12.2
 urllib3==2.2.3
